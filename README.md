@@ -50,115 +50,862 @@ Upload to GitHub Pages for free hosting.
 ## PROGRAM
 Index.html
 ```
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prema Latha S - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <h1>Prema Latha S</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#internships">Internships</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.8/css/line.css"
+    />
+  </head>
+
+  <body oncontextmenu="return false">
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="#" class="nav__logo">Prema Latha S</a>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active-link">
+                <i class="uil uil-estate nav__icon"></i>Home
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">
+                <i class="uil uil-user nav__icon"></i>About
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">
+                <i class="uil uil-file-alt nav__icon"></i>Skills
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#qualification" class="nav__link">
+                <i class="uil uil-briefcase-alt nav__icon"></i>Qualification
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#portfolio" class="nav__link">
+                <i class="uil uil-scenery nav__icon"></i>Projects
+              </a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">
+                <i class="uil uil-message nav__icon"></i>Contact-Me
+              </a>
+            </li>
+          </ul>
+          <i class="uil uil-times nav__close" id="nav-close"></i>
+        </div>
+        <div class="nav__btns">
+          <!-- Theme change button -->
+          <i class="uil uil-moon change-theme" id="theme-button"></i>
+
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="uil uil-apps"></i>
+          </div>
+        </div>
+      </nav>
     </header>
+    <!-- main-->
 
-    <section id="about">
-        <h2>About Me</h2>
-        <img src="prema.jpeg" alt="Prema Latha S" class="profile-pic">
-        <p>I am a passionate and highly motivated Artificial Intelligence and Data Science student with a strong foundation in programming, web technologies, and problem-solving. I enjoy tackling new challenges and leveraging my skills in data analysis, machine learning, software development, and web technologies to create impactful solutions.</p>
-        <p><strong>Resume:</strong> <a href="prema_resume1.pdf" target="_blank">Download Here</a></p>
-    </section>
+    <main class="main">
+      <!--========================= Home =====================-->
 
-    <section id="education">
-        <h2>Education</h2>
-        <p><strong>Saveetha Engineering College</strong></p>
-        <p>B.Tech in Artificial Intelligence and Data Science (2022 - 2026)</p>
-        <p>CGPA: 8.7</p>
-        <p><strong>St.Paul's Matriculation Higher Secondary School</strong></p>
-        <p>HSC - 93.3% (2022)</p>
-        <p>SSLC - 82% (2020)</p>
-    </section>
+      <section class="home section" id="home">
+        <div class="home__container container grid">
+          <div class="home__content grid">
+            <div class="home__social">
+              <a
+                href="https://www.linkedin.com/in/prema-latha-sureshbabu/"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-linkedin-alt home__icon"></i>
+              </a>
 
-    <section id="skills">
-        <h2>Technical Skills</h2>
-        <ul>
-            <p>Machine Learning & Data Analysis</p>
-            <p>Version Control (Git & GitHub)</p>
-            <p>Web Development (HTML, CSS, JavaScript, Node.js)</p>
-            <p>Programming Languages: Python, C, Java, SQL</p>
-            <p>Tools & Libraries: TensorFlow, OpenCV</p>
-        </ul>
-    </section>
-
-    <section id="projects">
-        <h2>Projects</h2>
-        <div class="project">
-            <h3>🎵 Music Player</h3>
-            <p>Developed a web-based music player using HTML, CSS, JavaScript, and Node.js, enabling smooth audio playback and playlist management.</p>
-        </div>
-        <div class="project">
-            <h3>📸 Cam-Detection</h3>
-            <p>Built a real-time hidden spy camera detection system using computer vision techniques like SSD and image processing.</p>
-        </div>
-        <div class="project">
-            <h3>🍔 Food Delivery Prediction</h3>
-            <p>Designed a Machine Learning model to predict food delivery time based on distance, traffic, and order details. Used regression algorithms to improve accuracy.</p>
-        </div>
-    </section>
-
-    <section id="internships">
-        <h2>Internships</h2>
-        <div class="internship">
-            <h3>Edify Techno Solutions - Pet Store Development</h3>
-            <p>Developed and designed a pet store website using HTML, CSS, and JavaScript, focusing on interactivity and user experience.</p>
-        </div>
-        <div class="internship">
-            <h3>Arjun Vision Technologies - Music Player</h3>
-            <p>Created a web-based music player with Node.js, HTML, and JavaScript, featuring audio playback controls and playlist management.</p>
-        </div>
-    </section>
-
-    <section id="achievements">
-        <h2>Achievements</h2>
-        <ul>
-            <p>🏆 Amazon AIML Challenge: Participated in Amazon's Machine Learning challenge, applying ML models to solve real-life business problems.</p>
-            <p>📊 IBM Z Datathon 2024: Engaged in a data science competition, leveraging IBM Z technology to analyze datasets and develop solutions.</p>
-            <p>📜 Certifications:
-                <ul>
-                    <p>Deep Learning TensorFlow for AI, ML, DL, NLP, CNN</p>
-                    <p>Interactivity with JavaScript (Coursera)</p>
-                    <p>AI with Python (Coursera)</p>
-                    <p>Internet of Things (NPTEL)</p>
-                    <p>OpenCV & Image Processing (Infosys)</p>
-                </ul>
+              <a
+                href="https://github.com/premalatha-sureshbabu"
+                target="_blank"
+                class="home__social-icon"
+              >
+                <i class="uil uil-github-alt home__icon"></i>
+              </a>
+            </div>
+            <div class="home__img">
+              <svg
+                class="home__blob"
+                viewBox="0 0 200 187"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <mask id="mask0" mask-type="alpha">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 165.547 
+                      130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 129.362C2.45775 
+                      97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 -0.149132 97.9666 
+                      0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                </mask>
+                <g mask="url(#mask0)">
+                  <path
+                    d="M190.312 36.4879C206.582 62.1187 201.309 102.826 182.328 134.186C163.346 
+                      165.547 130.807 187.559 100.226 186.353C69.6454 185.297 41.0228 161.023 21.7403 
+                      129.362C2.45775 97.8511 -7.48481 59.1033 6.67581 34.5279C20.9871 10.1032 59.7028 
+                     -0.149132 97.9666 0.00163737C136.23 0.303176 174.193 10.857 190.312 36.4879Z"
+                  />
+                  <image
+                    class="home__blob-img"
+                    x="-79"
+                    y="-46"
+                    xlink:href="prema.jpeg"
+                  />
+                </g>
+              </svg>
+            </div>
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm Prema Latha</h1>
+              <h3 class="home__subtitle">
+                Artificial Intelligence & Data Science Engineering Student
+              </h3>
+              <p class="home__description">
+                A third-year undergraduate engineering student at
+                <strong>Saveetha Engineering College </strong>, Chennai.
               </p>
-        </ul>
-    </section>
+              <a href="#contact" class="button button--flex">
+                Contact me<i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </div>
 
-    <section id="contact">
-        <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:s.premalatha260804@gmail.com@gmail.com">s.premalatha260804@gmail.com@gmail.com</a></p>
-        <p>Phone: <a href="tel:+918124694321">8124694321</a></p>
-        <p><strong>GitHub:</strong> <a href="https://github.com/premalathasureshbabu" target="_blank">GitHub Profile</a></p>
-        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/premalathasureshbabu/" target="_blank">LinkedIn Profile</a></p>
-    </section>
+          <div class="home__scroll">
+            <a href="#about" class="home__scroll-button button--flex">
+              <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+              <span class="home__scroll-name">Scroll down</span>
+              <i class="uil uil-arrow-down home__scroll-arrow"></i>
+            </a>
+          </div>
+        </div>
+      </section>
 
-    <footer>
-        <p>&copy; 2024 Prema Latha S. All rights reserved.</p>
+      <!--======================= About========================-->
+
+      <section class="about section" id="about">
+        <h2 class="section__title">About Me</h2>
+        <span class="section__subtitle">My introduction</span>
+
+        <div class="about__container container grid">
+          <img src="assets\img\about.jpg" alt="" class="about__img" />
+
+          <div class="about__data">
+            <p class="about__description">
+              I'm a third-year AIDS undergraduate, passionate about technology and an avid reader. I have a self-motivated and can-do attitude, thriving in challenging and dynamic environments. Seeking a competitive position to enhance my skills and contribute to a professional organization. I'm very much passionate to learn new stuff that interests me and can help me to get better.
+            </p>
+
+            <div class="about__info">
+              <div>
+                <span class="about__info-title">08.60+</span>
+                <span class="about__info-name">Aggregate <br />CGPA</span>
+              </div>
+
+              <div>
+                <span class="about__info-title">04+</span>
+                <span class="about__info-name"
+                  >
+                  Projects</span
+                >
+              </div>
+
+              <div>
+                <span class="about__info-title">01+</span>
+                <span class="about__info-name">Months <br />experience</span>
+              </div>
+            </div>
+
+            <div class="about__buttons">
+              <a download="" href="Resume-Prema.pdf" class="button button--flex">
+                Download CV<i class="fas fa-download button__icon"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===================== SKILLS =====================-->
+
+      <section class="skills section" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <span class="section__subtitle">My technical level</span>
+
+        <div class="skills__container container grid">
+          <div>
+            <!--==================== Skill 1 =================-->
+            <div class="skills__content skills__open">
+              <div class="skills__header">
+                <i class="fas fa-pencil-ruler skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title">Programming Languages</h1>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+              
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">C</h3>
+                  </div>
+                  
+                </div>
+                
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">Java</h3>
+                    </div>
+                    
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">JavaScript</h3>
+                    </div>
+                    
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">Python</h3>
+                    </div>
+                   
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">Full Stack</h3>
+                    </div>
+                </div>
+                
+                
+              </div>
+            </div>
+
+            <!--==================== Skill 2 =================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="fas fa-code skills__icon"></i>
+
+                <div>
+                  <h1 class="skills__title">Technical Constructs</h1>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Machine Learning</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">DS & Algorithms</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">OOP</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Deep Learning</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">NLP</h3>
+                    </div>
+                    
+                  </div>
+                  <div class="skills__data">
+                    <div class="skills__titles">
+                      <h3 class="skills__name">Computer Vision</h3>
+                    </div>
+                    
+                  </div>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <!--==================== Skill 3 =================-->
+            <div class="skills__content skills__close">
+              <div class="skills__header">
+                <i class="fas fa-swatchbook skills__icon"></i>
+                <div>
+                  <h1 class="skills__title">Tools</h1>
+                </div>
+
+                <i class="uil uil-angle-down skills__arrow"></i>
+              </div>
+
+              <div class="skills__list grid">
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Version Control</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">MongoDB</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Web Development</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">VS Code</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">React.js</h3>
+                  </div>
+                  
+                </div>
+                
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">UI/UX</h3>
+                  </div>
+                  
+                </div>
+                <div class="skills__data">
+                  <div class="skills__titles">
+                    <h3 class="skills__name">Open CV</h3>
+                  </div>
+                  
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--==================== Qualifications ==================-->
+
+      <section
+        class="qualification__section service__section"
+        id="qualification"
+      >
+        <h2 class="section__title">Qualification</h2>
+        <span class="section__subtitle">My personal journey</span>
+
+        <div
+          class="qualification__container container grid services__container"
+        >
+          <div class="qualification__tabs">
+            <div
+              class="qualification__button button--flex qualification__active"
+              data-target="#education"
+            >
+              <i class="uil uil-graduation-cap qualification__icon"></i>
+              Education
+            </div>
+          </div>
+
+          <div class="qualification__sections">
+            <!--====== Qualification Content 1 ======-->
+            <div
+              class="qualification__content qualifiation__active services__content"
+              data-content
+              id="education"
+            >
+              <!--====== Qualification 1 ======-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">SSLC</h3>
+                  <span class="qualification__subtitle"
+                    >St.Paul's Matriculation Higher Secondary School<br />High School</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    - 2020
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View More
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="services__modal">
+                    <div class="services__modal-content">
+                      <h4 class="services__modal-title">
+                        Class 10th Summary :
+                      </h4>
+                      <i class="uil uil-times services__modal-close"></i>
+                      <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>
+                            Subjects studied: Science, Maths, English,
+                            Social Studies,Tamil,
+                          </p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>Scored 84.8%</p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>Came runners up in inter-school Running Competition</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+              </div>
+
+              <!--====== Qualification 2 ======-->
+              <div class="qualification__data">
+                <div></div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <span class="qualification__line"></span>
+                </div>
+                <div>
+                  <h3 class="qualification__title">HSC</h3>
+                  <span class="qualification__subtitle"
+                    >St.Paul's Matriculation Higher Secondary School <br />High School</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    - 2022
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View More
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="services__modal">
+                    <div class="services__modal-content">
+                      <h4 class="services__modal-title">
+                        Class 12th Summary :
+                      </h4>
+                      <i class="uil uil-times services__modal-close"></i>
+                      <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>
+                            Subjects studied: Physics, Chemistry, Maths,
+                            English, Biology,Tamil.
+                          </p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__moda-icon"
+                          ></i>
+                          <p>Scored 93.3%</p>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--====== Qualification 3 ======-->
+              <div class="qualification__data">
+                <div>
+                  <h3 class="qualification__title">College</h3>
+                  <span class="qualification__subtitle"
+                    >Saveetha Engineering College ,Chennai</span
+                  >
+                  <div class="qualification__calender">
+                    <i class="uil uil-calendar-alt"></i>
+                    2022 - 2026
+                  </div>
+                  <span
+                    class="button button--flex button--small button--link services__button"
+                  >
+                    View More
+                    <i class="uil uil-arrow-right button__icon"></i>
+                  </span>
+                  <div class="services__modal">
+                    <div class="services__modal-content">
+                      <h4 class="services__modal-title">College Summary :</h4>
+                      <i class="uil uil-times services__modal-close"></i>
+                      <ul class="services__modal-services grid">
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          <p>
+                            Studying core subjects of AIDS including DSA, Java, Web Development, OOPs, Operating
+                            systems, and Computer architecture .
+                          </p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          <p>Scored an aggregate of 8.60 CGPA till now.</p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          <p>
+                            Student coordinator in Events
+                          </p>
+                        </li>
+                        <li class="services__modal-service">
+                          <i
+                            class="uil uil-check-circle services__modal-icon"
+                          ></i>
+                          <p>
+                            Coordinator in Badminton
+                          </p>
+                        </li>
+                       
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div>
+                  <span class="qualification__rounder"></span>
+                  <!--<span class="qualification__line"></span>-->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--=================== Portfolio ===================-->
+      <section class="portfolio section" id="portfolio">
+        <h2 class="section__title">Projects</h2>
+        <span class="section__subtitle">Most recent work</span>
+
+        <div class="portfolio__container container swiper-container">
+          <div class="swiper-wrapper">
+            <!-- ------------------------portfollio 1-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="portfolio5.png" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  Movie-App
+                </h3>
+                <p class="portfolio__description">
+                    The Movie App is a dynamic web application that enables users to explore movies, view details, and search for their favorite films. Built using modern web technologies like React, JavaScript, and API integration, the app provides an intuitive and user-friendly interface. It efficiently fetches and displays movie data, offering users real-time access to trending and popular films. The project showcases strong frontend development skills, making it a valuable addition to a portfolio.
+                </p>
+                <a
+                  href="https://github.com/premalatha-sureshbabu/movie-app"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://codepen.io/Prema-Latha/pen/RNwVKpg"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ------------------------portfollio 2-------------------- -->
+
+            <div class="portfolio__content grid swiper-slide">
+              <img src="portfolio1.png" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">
+                  Hidden-Camera-Detection
+                </h3>
+                <p class="portfolio__description">
+                    This project focuses on real-time detection of hidden spy cameras using the COCO SSD (Single Shot MultiBox Detector) model. It aims to enhance privacy and security by identifying concealed cameras in various environments, such as hotels, public restrooms, and changing rooms.
+                </p>
+                <a
+                  href="https://github.com/premalatha-sureshbabu/spy-cam"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://codepen.io/Prema-Latha/pen/GgRGyqY"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ------------------------portfollio 3-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="portfolio2.png" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Spotify-Clone</h3>
+                <p class="portfolio__description">
+                  Spotify Clone is a web app developed using HTML, CSS, and
+                  JavaScript. It recreates Spotify's interface and features,
+                  allowing users to browse, search, and play songs, create
+                  playlists, and discover new music. Responsive design ensures a
+                  seamless experience on any device. Contributions are welcome!
+                </p>
+                <a
+                  href="https://github.com/premalatha-sureshbabu/music-player"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://codepen.io/Prema-Latha/pen/qEBKppx"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+            <!-- ------------------------portfollio 4-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="portfolio3.png" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Shoplifting Detection</h3>
+                <p class="portfolio__description">
+                    The shoplifting detection system utilizes the YOLO (You Only Look Once) model, a real-time object detection algorithm, to identify suspicious activities in retail environments. The model is trained on surveillance footage, analyzing video frames to detect potential shoplifting behavior based on predefined patterns. YOLO’s ability to process images in a single pass allows for fast and accurate detection, making it suitable for real-time monitoring. 
+                </p>
+                <a
+                  href="https://github.com/premalatha-sureshbabu/Shoplifting-Detection-"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://colab.research.google.com/drive/1_BIGPOTs6_l8CEGgIXrlrzJVbeFSlk63?usp=sharing"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+
+            <!-- ------------------------portfollio 5-------------------- -->
+            <div class="portfolio__content grid swiper-slide">
+              <img src="portfolio4.png" class="portfolio__img" />
+
+              <div class="portfolio__data">
+                <h3 class="portfolio__title">Toxic and Non-Toxic Plant classification</h3>
+                <p class="portfolio__description">
+                  Developed a deep learning-based image classification model using Convolutional Neural Networks (CNNs) to accurately distinguish between toxic and non-toxic plants. The model was trained and evaluated on a Kaggle dataset, achieving high accuracy through advanced techniques like data augmentation, transfer learning, and fine-tuning. This project showcases my ability to apply computer vision and deep learning to real-world safety and environmental applications.
+                </p>
+                <a
+                  href="https://github.com/premalatha-sureshbabu/toxic-and-non-toxic-plant-classification"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  GitHub Repository
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+                <a
+                  href="https://colab.research.google.com/drive/1SPoZD3JDMttGh7XQt7yyAuPnWp0oPagP?usp=sharing"
+                  class="button button--flex button--small portfolio__button"
+                >
+                  See Live
+                  <i class="uil uil-external-link-alt button__icon"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- add arrows -->
+          <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+          </div>
+          <!-- add pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </section>
+
+      <!--===================== Contact Me =====================-->
+      <section class="contact section" id="contact">
+        <h2 class="section__title">Contact Me</h2>
+        <span class="section__subtitle">Get in touch</span>
+
+        <div class="contact__container container grid">
+          <div>
+            <div class="contact__information">
+              <i class="uil uil-calling contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Contact Me</h3>
+                <span class="contact__subtitle"
+                  ><a href="tel:8124694321"></a>8124694321</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-envelope-minus contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Email</h3>
+                <span class="contact__subtitle"
+                  >s.premalatha260804@gmail.com</span
+                >
+              </div>
+            </div>
+
+            <div class="contact__information">
+              <i class="uil uil-map-marker contact__icon"></i>
+
+              <div>
+                <h3 class="contact__title">Location</h3>
+                <span class="contact__subtitle"
+                  >Chennai, Tamilnadu, India</span
+                >
+              </div>
+            </div>
+          </div>
+
+          <form action="" class="contact__form grid">
+            <div class="contact__inputs grid">
+              <div class="contact__content">
+                <label for="" class="content__label">Name</label>
+                <input type="text" class="contact__input" />
+              </div>
+
+              <div class="contact__content">
+                <label for="" class="content__label">Email</label>
+                <input type="Email" class="contact__input" />
+              </div>
+            </div>
+
+            <div class="contact__content">
+              <label for="" class="content__label">Message</label>
+              <textarea
+                name=""
+                id=""
+                cols="0"
+                rows="7"
+                class="contact__input"
+              ></textarea>
+            </div>
+
+            <div>
+              <a
+                href=" mailto: rkamathvenkatesh@gmail.com?subject=Testing out mailto! &body=This is only a test!"
+                class="button button--flex"
+              >
+                Send Message
+                <i class="uil uil-message button__icon"></i>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--================== Footer ===============-->
+    <footer class="footer">
+      <div class="footer__bg">
+        <div class="footer__container container grid">
+          <div>
+            <h1 class="footer__title">Prema Latha S</h1>
+            <span class="footer__subtitle"
+              >Artificial Intelligence & Data Science Engineering Student</span
+            >
+          </div>
+
+          <ul class="footer__links">
+            <li>
+              <a href="#qualification" class="footer__link">Qualification</a>
+            </li>
+            <li>
+              <a href="#portfolio" class="footer__link">Portfolio</a>
+            </li>
+            <li>
+              <a href="#contact" class="footer__link">Contact-Me</a>
+            </li>
+          </ul>
+
+          <div class="footer__socials">
+            <a
+              href="https://www.instagram.com/venkateeshh/"
+              class="footer__social"
+              target="__blank"
+            >
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a
+              href="https://twitter.com/Venkateeshhh"
+              target="__blank"
+              class="footer__social"
+            >
+            <i class="fa-brands fa-x-twitter"></i>
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__copy">&#169; Prema Latha. All right reserved</p>
+      </div>
     </footer>
-</body>
+
+    <!--================== SCROLL TOP ==================-->
+    <a href="#" class="scrollup" id="scroll-up">
+      <i class="uil uil-arrow-up scrollup__icon"></i>
+    </a>
+
+    <script type="text/javascript" src="swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/2205d59d52.js" crossorigin="anonymous"></script>
+    <script src="ptj.js"></script>
+  </body>
 </html>
 ```
 Style.css
